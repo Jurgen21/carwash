@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+
+    <div class="form-container">
+        <a href="index.html"><h1>CONTACT US</h1></a>
+        <p>
+            We’re here to help! Whether you have a question about our services, need a customized quote, or simply want to say hello, our team is ready to assist. Feel free to reach out using the contact form below, or give us a call. We pride ourselves on prompt responses and ensuring every inquiry is handled with care.
+        </p>
+        <form action="web.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">First Name</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Last Name</label><br>
+                <input type="text" id="surname" name="Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </div> 
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label><br>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="country">License Plate</label><br>
+                <input type="text" id="plate" name="License Plate" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label><br>
+                <textarea id="description" name="description" rows="6" required></textarea><br>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="btn-i">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
